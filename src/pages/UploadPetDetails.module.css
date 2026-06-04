@@ -1,0 +1,130 @@
+/* UploadPetDetails.module.css */
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #0056b3;
+    --background-color: #f8f9fa;
+    --text-color: #333;
+    --font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 700px;
+    margin: 100px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .headerTitle {
+    font-family: var(--font-family);
+    font-weight: 700;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    position: relative;
+  }
+  
+  .headerTitle:after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background: var(--primary-color);
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .formControl {
+    border-radius: 0;
+    box-shadow: none;
+    transition: border-color 0.3s ease-in-out;
+    margin-bottom: 20px;
+  }
+  
+  .formControl:focus {
+    border-color: var(--primary-color);
+    box-shadow: none;
+  }
+  
+  .formLabel {
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: var(--text-color);
+    margin-bottom: 10px;
+  }
+  
+  .formControlFile {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .btnPrimary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    border-radius: 0;
+    padding: 10px 20px;
+    font-weight: 700;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    width: 100%;
+  }
+  
+  .btnPrimary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    transform: translateY(-3px);
+  }
+  
+  .aboutSection {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .aboutTitle {
+    font-family: var(--font-family);
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  
+  .aboutText {
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: var(--text-color);
+    font-size: 1rem;
+  }
+  
+  .formGroup {
+    margin-bottom: 20px;
+  }
+  
+form>div {
+  width: 100%;
+  float: left;
+}
+form>div>label {
+  float: left;
+  width: 10%;
+  padding-top: 8px;
+  text-align: right;
+}
+
+
+
+form>div>input {
+  float: left;
+  margin-left: 10px;
+  width: 80%;
+  border-radius: 7px !important;
+}

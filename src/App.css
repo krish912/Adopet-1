@@ -1,0 +1,276 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.img-size{
+height: 100vh;
+}
+
+.centers{
+  text-align: center;
+  float: right;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.respimg{
+padding: 0%;
+margin: 0%;
+}
+
+
+.head-text {
+  position: relative;
+ 
+}
+.text-on-image {
+ position: absolute;
+ /* right: 10%; */
+ left: 3%;
+ /* bottom: 15%; */
+top: 2%;
+}
+.text-on-image-left {
+  position: absolute;
+  right: 2%;
+  top: 3%;
+font-size: 18px;
+  /* left: 3%; */
+  /* bottom: 15%; */
+
+ }
+ .lnkcolor{
+  color:#403945;
+ }
+ .inkcolor:hover{
+  color: #403945;
+ }
+.notworking{
+z-index: 9;
+position: absolute;
+ }
+ .carousel-control-next, .carousel-control-prev{
+  width:3% !important;
+ }
+
+ .dogs-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.dogs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.dog-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  width: 280px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dog-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.dog-details {
+  padding: 10px;
+}
+
+.adopt-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.adopt-button:hover {
+  background-color: #0056b3;
+}
+.offcanvas.offcanvas-start{
+  width: 70% !important;
+}
+.offcanvas-header{
+  padding-left: 30px !important;
+  padding-top: 65px !important;
+  color: white;
+  background-color: black;
+}
+.offcanvas-body{
+  padding-left: 30px !important;
+  color: white;
+  background-color: black;
+}
+
+/* app css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.app-main {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.app-footer {
+  background-color: #f8f9fa;
+  padding: 10px 0;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+.account-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.offcanvas-header {
+  padding-left: 30px !important;
+  padding-top: 4% !important;
+  padding-bottom:.5% !important;
+}
+.offcanvas{
+  margin-top: 5.5% !important;
+  margin-left: 80% !important;
+  height: 45% !important;
+  --bs-offcanvas-width: 300px !important;
+}
+.offcanvas-backdrop {
+  background-color: transparent !important;
+}
+.offcanvas-body{
+   font-size: 15.5px !important;
+}
+
+
+/* Underline animation from left to right */
+.underline-hover {
+  position: relative;
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.underline-hover::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0.5px;
+  bottom: 0;
+  left: 0;
+  background-color: currentColor;
+  transition: width 0.3s ease-in-out;
+}
+
+.underline-hover:hover::after {
+  width: 100%;
+}
+ /* end of hover l to r */
+
+ .logo-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* css for uploadpetdetails.js */
+
+/* src/App.css */
+/* .container {
+  max-width: 600px;
+  margin-top: 50px;
+} */
+
+h2 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #333;
+}
+
+.form-control {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  border-color: #000;
+  box-shadow: none;
+}
+
+.btn-primary {
+  background-color: #000;
+  border-color: #000;
+  border-radius: 0;
+}
+
+.btn-primary:hover {
+  background-color: #333;
+  border-color: #333;
+}
+
+.form-label {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #333;
+}
+.pet-image-container{
+  width: 40%;
+}
+.account-logo:hover{
+  cursor: pointer;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
