@@ -16,7 +16,7 @@ const PetShopDetail = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`http://localhost:8000/petShops/${shopId}`)
+    fetch(`https://adopet-1-server.onrender.com/petShops/${shopId}`)
       .then(response => response.json())
       .then(data => {
         console.log("mesg is",data.message)
@@ -26,7 +26,7 @@ const PetShopDetail = () => {
   }, [shopId]);
 
   useEffect(() => {
-    fetch(`http://localhost:8000/dogsList/${shopId}`)
+    fetch(`https://adopet-1-server.onrender.com/dogsList/${shopId}`)
       .then(response => response.json())
       .then(data => {
         console.log("mesg in doglist/:id",data.message)

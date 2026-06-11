@@ -25,7 +25,7 @@ const AdoptionPage = () => {
     const fetchPetDetails = async () => {
       setIsLoading(true);
       try {
-        const response = await fetch(`http://localhost:8000/pets/${matches}`);
+       const response = await fetch(`https://adopet-1-server.onrender.com/pets/${matches}`);
         if (!response.ok) {
           throw new Error('Failed to fetch pet details');
         }
@@ -43,7 +43,7 @@ const AdoptionPage = () => {
 
 
   useEffect(() => {
-    fetch("http://localhost:8000/getpetshop")
+    fetch("https://adopet-1-server.onrender.com/getpetshop")
       .then(response => response.json())
       .then(data => {
         const petsWithStringShopId = data.message.map(pet => ({
@@ -57,7 +57,7 @@ const AdoptionPage = () => {
   }, [petId]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/dogsList")
+    fetch("https://adopet-1-server.onrender.com/dogsList")
       .then(response => response.json())
       .then(data => {
         const petsWithStringShopId = data.message.map(pet => ({

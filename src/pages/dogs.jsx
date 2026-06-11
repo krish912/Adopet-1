@@ -15,7 +15,7 @@ useEffect(()=>{
     headers:{'content-type':'application/json'},
     body:"okk"
   };
-  fetch("http://localhost:8000/dogsList")
+  fetch("https://adopet-1-server.onrender.com/dogsList")
   .then(Response=>Response.json())
   .then(data=>{
     // alert(data.message)

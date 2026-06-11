@@ -10,7 +10,7 @@ const PetShopList = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://localhost:8000/getpetShop")
+    fetch("https://adopet-1-server.onrender.com/getpetShop")
       .then(response => response.json())
       .then(data => {
         setPetShops(data.message);

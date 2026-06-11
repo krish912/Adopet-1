@@ -20,7 +20,7 @@ function ContactOn(){
           headers:{'content-Type':'application/json'},
           body:JSON.stringify(form)
         };
-        fetch('http://localhost:8000/contactus',requestOption)
+        fetch('https://adopet-1-server.onrender.com/contactus',requestOption)
         .then(response=>response.json())
         .then(data=>{
           setForm({ name: '', email: '', message: ''});

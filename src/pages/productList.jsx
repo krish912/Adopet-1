@@ -16,7 +16,7 @@ const ProductList = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://localhost:8000/dogsList")
+    fetch("https://adopet-1-server.onrender.com/dogsList")
       .then(response => response.json())
       .then(data => {
         const petsWithStringShopId = data.message.map(pet => ({
@@ -29,7 +29,7 @@ const ProductList = () => {
   }, []);
 
   useEffect(() => {
-    fetch("http://localhost:8000/getpetshop")
+    fetch("https://adopet-1-server.onrender.com/getpetshop")
       .then(response => response.json())
       .then(data => {
         const petsWithStringShopId = data.message.map(pet => ({
